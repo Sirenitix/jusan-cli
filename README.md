@@ -12,7 +12,7 @@ define <path>           выводит `директория` или `файл` 
 
 readmod <path>          выводит права для файла в формате `rwx` для текущего пользователя - | например readmod и путь к файлу "F:\Downloads\jusan-cli-main.zip" 
 
-setmod <path> <perm>    устанавливает права для файла `path` `perm`(read,write,execute) - | например setmod path(полный путь) perm(read,write,execute)
+setmod <path> <perm>    устанавливает права для файла `path` `perm`(read,write,execute) - | например setmod path(F:\Downloads\AngularReactiveFormsDemo-master) perm(read,write,execute)
 
 cat <path>              выводит контент файла - | например cat и полный путь до файла  "F:\Downloads\jusan-cli-main.zip"  
 
