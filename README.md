@@ -5,7 +5,7 @@
 java -jar jusan-cli.jar
 ```
 ```
-MyFS 1.0 команды:
+Команды:
 
 ls <path>               выводит список всех файлов и директорий для `path` - 
                         | например ls F:\Downloads\AngularReactiveFormsDemo-master
