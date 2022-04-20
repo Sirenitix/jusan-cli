@@ -4,9 +4,8 @@
 ```
 java -jar jusan-cli.jar
 ```
-
+### Сами команды:
 ```
-Сами команды:
 
 ls <path>               выводит список всех файлов и директорий для `path` - 
                         | например ls F:\Downloads\AngularReactiveFormsDemo-master
