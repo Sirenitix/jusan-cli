@@ -42,7 +42,7 @@ public class MyFile {
         children = new String[]{};
         String arr[] = path.split(" ");
         String pathChecker =  arr[0];
-        if (pathChecker.contains("ls_py") && !pathChecker.contains("ls")) {
+        if (pathChecker.contains("ls_py")) {
             String directory = path.substring(path.indexOf(' ') + 1);
             File dir = new File(directory);
             if(dir.list() != null){
