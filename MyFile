@@ -174,14 +174,14 @@ public class MyFile {
         String pathChecker =  arr[0];
         if (pathChecker.contains("bc")) {
             String currentDirectory = path.substring(path.indexOf(' ') + 1);
-            File dir = new File("\\\\\\\\tmp");
+            File dir = new File("/tmp");
             File checkDir = new File(currentDirectory);
             Date date = new Date();
             SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
-            File newFile = new File("\\\\\\\\tmp" + formatter.format(date) + ".backup");
+            File newFile = new File("/tmp/" + formatter.format(date) + ".backup");
                 try {
-                    FileUtils.copyDirectory(checkDir, dir);
-                    newFile.createNewFile();
+                    newFile.mkdir();
+                    FileUtils.copyDirectory(checkDir, newFile);
                     System.out.println("резервная копия успешно создана");
                 }catch (Exception e){
                     System.out.println("неверные входные данные");
