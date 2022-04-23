@@ -120,15 +120,15 @@ public class MyFile {
         if (pathChecker.contains("setmod")) {
             String currentDirectory = path.split(" ")[1];
             File dir = new File(currentDirectory);
-                    if(permissions.contains("read")){
+                    if(arr[2].contains("r")){
                         dir.setReadable(true);
                         System.out.println("даны права на чтение");
                     }
-                    if(permissions.contains("write")){
+                    if(arr[2].contains("w")){
                         dir.setWritable(true);
                         System.out.println("даны права на запись");
                     }
-                    if(permissions.contains("execute")){
+                    if(arr[2].contains("x")){
                         dir.setExecutable(true);
                         System.out.println("даны права на выполнение");
                     }
